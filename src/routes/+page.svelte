@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Hero from "$lib/components/homeComponents/Hero.svelte";
   import { Alert } from "flowbite-svelte";
 </script>
 
@@ -10,9 +11,11 @@
 	/>
 </svelte:head>
 
-<div class="p-8 min-h-screen">
+<div class="m-8">
   <Alert>
     <span class="font-medium">Avis : </span>
     Ce site est actuellement en développement et en cours de création. Merci pour votre patience ! 
   </Alert>
 </div>
+
+<Hero />
