@@ -6,6 +6,11 @@
     import { ChartPieSolid, CartSolid, GridSolid, MailBoxSolid, UsersSolid, ShoppingBagSolid, ArrowRightToBracketOutline, EditOutline } from "flowbite-svelte-icons";
     let open2 = $state(false);
     let spanClass = "flex-1 ms-3 whitespace-nowrap";
+
+    // close drawer
+    function closeDrawer() {
+      open2 = false;
+    }
 </script>
 
 <Navbar class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded shadow-md ">
@@ -26,10 +31,10 @@
 
   <NavUl class="order-1">
     <NavLi class="text-lg" href="/">Accueil</NavLi>
-    <NavLi class="text-lg mx-2" href="/about">À propos</NavLi>
+    <NavLi class="text-lg mx-2 " href="/about">Cadeaux</NavLi>
     <NavLi class="text-lg mr-2" href="/docs/components/navbar">Packs</NavLi>
-    <NavLi class="text-lg mr-2" href="/pricing">Produits</NavLi>
-    <NavLi class="text-lg" href="/contact">Contact</NavLi>
+    <NavLi class="text-lg mr-2" href="/pricing">Articles</NavLi>
+    <NavLi class="text-lg" href="/contact">Contactez-nous</NavLi>
   </NavUl>
 </Navbar>
 
@@ -38,53 +43,63 @@
   <Sidebar disableBreakpoints={true} class="top-16">
     <SidebarWrapper class="overflow-y-auto rounded-sm px-3 py-0 dark:bg-gray-800">
       <SidebarGroup>
-        <SidebarItem label="Dashboard">
+        <SidebarItem label="Accueil"  href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <ChartPieSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+            </svg>
           {/snippet}
         </SidebarItem>
-        <SidebarDropdownWrapper label="E-commerce">
+        <SidebarDropdownWrapper label="Cadeaux">
           {#snippet icon()}
-            <CartSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z"/>
+            </svg>
           {/snippet}
-          <SidebarItem label="Products" />
-          <SidebarItem label="Billing" />
-          <SidebarItem label="Invoice" />
+          <SidebarItem label="Mariage" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="anniversaire" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="Graduation" href="/" onclick={closeDrawer}/>
         </SidebarDropdownWrapper>
-        <SidebarItem label="Kanban" {spanClass}>
+        <SidebarItem label="Packs" {spanClass} href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <GridSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9M9 7h6m-7 3h8"/>
+            </svg>
           {/snippet}
           {#snippet subtext()}
-            <span class="ms-3 inline-flex items-center justify-center rounded-full bg-gray-200 px-2 text-sm font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Pro</span>
+            <span class="ms-3 inline-flex items-center justify-center rounded-full bg-gray-200 px-2 text-sm font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Promo</span>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Inbox" {spanClass}>
+        <SidebarItem label="Articles" {spanClass} href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <MailBoxSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
+            </svg>
           {/snippet}
           {#snippet subtext()}
-            <span class="text-primary-600 bg-primary-200 dark:bg-primary-900 dark:text-primary-200 ms-3 inline-flex h-3 w-3 items-center justify-center rounded-full p-3 text-sm font-medium">3</span>
+            <span class="text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300 ms-3 inline-flex h-3 w-3 items-center justify-center rounded-full p-4 text-sm font-medium">+20</span>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Users">
+        <SidebarItem label="Contactez-nous" href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <UsersSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+            </svg>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Products">
+        <SidebarItem label="Facebook" href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <ShoppingBagSolid class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+            </svg>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Sign In">
+        <SidebarItem label="Instagram" href="/" onclick={closeDrawer}>
           {#snippet icon()}
-            <ArrowRightToBracketOutline class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
-          {/snippet}
-        </SidebarItem>
-        <SidebarItem label="Sign Up">
-          {#snippet icon()}
-            <EditOutline class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+            </svg>
           {/snippet}
         </SidebarItem>
       </SidebarGroup>

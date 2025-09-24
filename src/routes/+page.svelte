@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>CADEAUX PROM</title>
+	<title>Cadeaux Prom</title>
 	<meta
 		name="description"
 		content="Cadeaux Prom vous accompagne dans la création de cadeaux uniques et personnalisés, parfaits pour anniversaires, mariages, fêtes ou événements d’entreprise."
