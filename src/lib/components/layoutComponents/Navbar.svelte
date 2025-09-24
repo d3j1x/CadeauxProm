@@ -34,7 +34,7 @@
     <NavLi class="text-lg mx-2 " href="/about">Cadeaux</NavLi>
     <NavLi class="text-lg mr-2" href="/docs/components/navbar">Packs</NavLi>
     <NavLi class="text-lg mr-2" href="/pricing">Articles</NavLi>
-    <NavLi class="text-lg" href="/contact">Contactez-nous</NavLi>
+    <NavLi class="text-lg" href="/contactez-nous">Contactez-nous</NavLi>
   </NavUl>
 </Navbar>
 
@@ -57,7 +57,7 @@
             </svg>
           {/snippet}
           <SidebarItem label="Mariage" href="/" onclick={closeDrawer}/>
-          <SidebarItem label="anniversaire" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="Anniversaire" href="/" onclick={closeDrawer}/>
           <SidebarItem label="Graduation" href="/" onclick={closeDrawer}/>
         </SidebarDropdownWrapper>
         <SidebarItem label="Packs" {spanClass} href="/" onclick={closeDrawer}>
@@ -80,7 +80,7 @@
             <span class="text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300 ms-3 inline-flex h-3 w-3 items-center justify-center rounded-full p-4 text-sm font-medium">+20</span>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Contactez-nous" href="/" onclick={closeDrawer}>
+        <SidebarItem label="Contactez-nous" href="/contactez-nous" onclick={closeDrawer}>
           {#snippet icon()}
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
