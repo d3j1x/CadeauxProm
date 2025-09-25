@@ -1,6 +1,9 @@
 <script>
   import cpromlogo from '$lib/images/logos/cprom-transparent.png';
+
+
 </script>
+
 
 <footer class=" bg-gray-100 dark:bg-gray-900">
 
@@ -106,7 +109,7 @@
     <!-- Bottom section with animated copyright -->
     <div class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
       <p class=" text-sm mb-4 md:mb-0">
-        &copy; <span id="year" class="text-blue-700 dark:text-pink-700"></span> Cadeaux Prom. Tous droits réservés.
+        &copy; <span id="year" class="text-blue-700 dark:text-pink-700">2025</span> Cadeaux Prom. Tous droits réservés.
       </p>
       <div class="flex space-x-6">
         <a href="#" class=" hover:text-blue-600 transition dark:hover:text-pink-600">Politique de confidentialité</a>
@@ -115,44 +118,6 @@
     </div>
   </div>
 
-  <!-- Floating orb that follows cursor -->
-  <div class="orb absolute w-64 h-64 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 filter blur-3xl pointer-events-none"></div>
+  </footer>
 
-  <style>
-    /* Animations */
-    @keyframes float1 {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(20px, 20px); }
-    }
-    @keyframes float2 {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(-15px, 15px); }
-    }
-    @keyframes float3 {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(0, -20px); }
-    }
-    .animate-float1 { animation: float1 8s ease-in-out infinite; }
-    .animate-float2 { animation: float2 10s ease-in-out infinite; }
-    .animate-float3 { animation: float3 12s ease-in-out infinite; }
 
-    /* Orb follow effect */
-    .orb {
-      transform: translate(-50%, -50%);
-      opacity: 0.3;
-      transition: transform 0.1s ease-out;
-    }
-  </style>
-
-  <script>
-    // Update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mouse follow orb effect
-    document.addEventListener('mousemove', (e) => {
-      const orb = document.querySelector('.orb');
-      orb.style.left = `${e.clientX}px`;
-      orb.style.top = `${e.clientY}px`;
-    });
-  </script>
-</footer>

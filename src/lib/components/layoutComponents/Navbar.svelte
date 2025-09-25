@@ -39,9 +39,9 @@
 
   <NavUl class="order-1">
     <NavLi class="text-lg" href="/">Accueil</NavLi>
-    <NavLi class="text-lg lg:mx-4" href="/about">Cadeaux</NavLi>
-    <NavLi class="text-lg" href="/docs/components/navbar">Packs</NavLi>
-    <NavLi class="text-lg  lg:mx-4" href="/pricing">Articles</NavLi>
+    <NavLi class="text-lg lg:mx-4" href="/">Cadeaux</NavLi>
+    <NavLi class="text-lg" href="/">Packs</NavLi>
+    <NavLi class="text-lg  lg:mx-4" href="/">Articles</NavLi>
     <NavLi class="cursor-pointer  text-lg" onclick={() => (open = true)}>
       Decorative<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6  text-lg" />
     </NavLi>
@@ -54,7 +54,7 @@
 </Navbar>
 
 <Drawer bind:open={open2} class="w-64 bg-gray-50 p-0 dark:bg-gray-800">
-  <h5 class="px-6 py-4 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+  
   <Sidebar disableBreakpoints={true} class="top-16">
     <SidebarWrapper class="overflow-y-auto rounded-sm px-3 py-0 dark:bg-gray-800">
       <SidebarGroup>
