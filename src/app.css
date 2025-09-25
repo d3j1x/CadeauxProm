@@ -41,9 +41,12 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  background-image: linear-gradient(to right, #fbcfe8, #e9d5ff, #bfdbfe);
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .dark body {
-  background-color: #111827;
+  background-image: linear-gradient(to right, #1f2937, #111827, #000000);
+  color: white;
 }

@@ -1,9 +1,11 @@
 <script lang="ts">
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode } from "flowbite-svelte";
+    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, MegaMenu } from "flowbite-svelte";
     import cpromlogo from '$lib/images/logos/cprom-transparent.png';
 
     import { Drawer, CardPlaceholder, Button, Sidebar, SidebarWrapper, SidebarDropdownWrapper, SidebarGroup, SidebarItem } from "flowbite-svelte";
     import { ChartPieSolid, CartSolid, GridSolid, MailBoxSolid, UsersSolid, ShoppingBagSolid, ArrowRightToBracketOutline, EditOutline } from "flowbite-svelte-icons";
+    import { ChevronDownOutline } from "flowbite-svelte-icons";
+
     let open2 = $state(false);
     let spanClass = "flex-1 ms-3 whitespace-nowrap";
 
@@ -11,12 +13,18 @@
     function closeDrawer() {
       open2 = false;
     }
+
+    let menu = [
+    { name: "Tableaux", href: "/" },
+    { name: "Montres", href: "/" },
+    { name: "Autres..", href: "/" }
+  ];
 </script>
 
-<Navbar class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded shadow-md ">
+<Navbar class="  px-2 sm:px-4 sm:py-2 rounded shadow-md ">
   
   <NavBrand href="/">
-    <img src={cpromlogo} class="me-3 h-6 sm:h-9 dark:invert" alt="Cadeaux Prom Logo" />
+    <img src={cpromlogo} class="me-3 h-6 h-9 dark:invert" alt="Cadeaux Prom Logo" />
     <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">Cadeaux Prom</span>
   </NavBrand>
   
@@ -31,10 +39,17 @@
 
   <NavUl class="order-1">
     <NavLi class="text-lg" href="/">Accueil</NavLi>
-    <NavLi class="text-lg mx-2 " href="/about">Cadeaux</NavLi>
-    <NavLi class="text-lg mr-2" href="/docs/components/navbar">Packs</NavLi>
-    <NavLi class="text-lg mr-2" href="/pricing">Articles</NavLi>
-    <NavLi class="text-lg" href="/contactez-nous">Contactez-nous</NavLi>
+    <NavLi class="text-lg lg:mx-4" href="/about">Cadeaux</NavLi>
+    <NavLi class="text-lg" href="/docs/components/navbar">Packs</NavLi>
+    <NavLi class="text-lg  lg:mx-4" href="/pricing">Articles</NavLi>
+    <NavLi class="cursor-pointer  text-lg" onclick={() => (open = true)}>
+      Decorative<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6  text-lg" />
+    </NavLi>
+    <MegaMenu items={menu} >
+      {#snippet children({ item })}
+        <a href={item.href} class="hover:text-primary-600 dark:hover:text-primary-500 mx-2">{item.name}</a>
+      {/snippet}
+    </MegaMenu>
   </NavUl>
 </Navbar>
 
@@ -80,6 +95,17 @@
             <span class="text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-300 ms-3 inline-flex h-3 w-3 items-center justify-center rounded-full p-4 text-sm font-medium">+20</span>
           {/snippet}
         </SidebarItem>
+        <SidebarDropdownWrapper label="Decorative">
+          {#snippet icon()}
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+</svg>
+
+          {/snippet}
+          <SidebarItem label="Tableaux" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="Montres" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="Autres.." href="/" onclick={closeDrawer}/>
+        </SidebarDropdownWrapper>
         <SidebarItem label="Contactez-nous" href="/contactez-nous" onclick={closeDrawer}>
           {#snippet icon()}
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -88,14 +114,14 @@
             </svg>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Facebook" href="/" onclick={closeDrawer}>
+        <SidebarItem label="Facebook" href="https://www.facebook.com/profile.php?id=100066795998795" target="_blank" onclick={closeDrawer}>
           {#snippet icon()}
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
             </svg>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Instagram" href="/" onclick={closeDrawer}>
+        <SidebarItem label="Instagram" href="https://www.instagram.com/cadeaux_prom/" target="_blank" onclick={closeDrawer}>
           {#snippet icon()}
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>

@@ -11,11 +11,11 @@
 	/>
 </svelte:head>
 
-<div class="m-8">
-  <Alert>
-    <span class="font-medium">Avis : </span>
-    Ce site est actuellement en développement et en cours de création. Merci pour votre patience ! 
+
+  <Alert class="rounded-none m-0 p-1 text-center">
+    <span class="font-medium">Avis : Ce site est actuellement en développement et en cours de création.</span>
+    <span class="font-bold">Merci pour votre patience !</span> 
   </Alert>
-</div>
+
 
 <Hero />

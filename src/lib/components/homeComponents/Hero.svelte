@@ -1,10 +1,11 @@
-<section class="relative bg-white dark:bg-gray-900">
+<script>
+  import laserbg from '$lib/images/homeImages/laserbg.webp';
+</script>
+<section class="">
   <!-- Background decoration -->
-  <div class="absolute inset-0 -z-10">
-    <div class="h-full w-full bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 dark:from-gray-800 dark:via-gray-900 dark:to-black opacity-40"></div>
-  </div>
+   
 
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col lg:flex-row items-center gap-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-10 lg:py-20 flex flex-col lg:flex-row items-center gap-12">
     <!-- Texte -->
     <div class="flex-1 text-center lg:text-left">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
@@ -30,9 +31,9 @@
 
     <!-- Image Hero -->
     <div class="flex-1 flex justify-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" 
+      <img src={laserbg} 
            alt="Cadeau personnalisé" 
-           class="w-72 sm:w-96 drop-shadow-2xl animate-bounce-slow dark:invert">
+           class="w-72 sm:w-96  drop-shadow-2xl  ">
     </div>
   </div>
 </section>
