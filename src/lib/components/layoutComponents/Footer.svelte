@@ -5,13 +5,12 @@
 </script>
 
 
-<footer class=" bg-gray-100 dark:bg-gray-900">
-
+<footer>
 
   <!-- Main footer content -->
-  <div class="relative max-w-7xl mx-auto px-6 py-10 sm:py-20 lg:px-8">
+  <div class="relative max-w-7xl mx-auto px-6 py-10 sm:py-20 lg:px-8 ">
     <!-- Grid layout -->
-    <div class="grid grid-cols-1 md:grid-cols-3  gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
       
       <!-- Logo/Name section with interactive effect -->
       <div class="group">
@@ -76,7 +75,7 @@
           <li class="flex items-start">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center animate-pulse">
-                <svg class="w-4 h-4 text-blue-900 dark:text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4  text-blue-900 dark:text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
               </div>

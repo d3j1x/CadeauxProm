@@ -1,7 +1,7 @@
 <section class=" my-8 md:py-10 min-h-screen">
     <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:py-20 lg:px-8">
         <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-extrabold leading-tight text-blue-600 dark:text-pink-600">Visitez notre emplacement</h2>
+            <h2 class="text-3xl font-extrabold leading-tight text-blue-500 dark:text-pink-500">Visitez notre emplacement</h2>
         </div>
         <div class="mt-16 lg:mt-20">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
