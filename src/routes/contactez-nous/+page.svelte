@@ -21,7 +21,7 @@
                         </div>
                         <div class="border-t border-gray-200 pl-6 py-4">
                             <h3 class="text-lg font-medium text-blue-600 dark:text-pink-600">Contact</h3>
-                            <p class="mt-1  dark:text-gray-300">E-mail: &nbsp; <span class="tracking-widest"> cadeauxprom@gmail.com</span></p>
+                            <p class="mt-1  dark:text-gray-300">E-mail: &nbsp; <span class="tracking-widest"> cadeauprom@gmail.com</span></p>
                             <p class="mt-1  dark:text-gray-300">Phone: &nbsp; <span class="tracking-widest">56 165 627</span></p>
                             
                         </div>

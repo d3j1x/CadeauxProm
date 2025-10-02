@@ -82,7 +82,7 @@
             </div>
             <div class="ml-3">
               <p class="text-sm text-gray-600 dark:text-gray-300">E-mail</p>
-              <a href="mailto:cadeauxprom@gmail.com" class=" hover:text-blue-600 dark:hover:text-pink-600 transition">cadeauxprom@gmail.com</a>
+              <a href="mailto:cadeauprom@gmail.com" class=" hover:text-blue-600 dark:hover:text-pink-600 transition">cadeauprom@gmail.com</a>
             </div>
           </li>
           <li class="flex items-start">
