@@ -69,7 +69,7 @@
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium ">
-                <a href="#" class="hover:underline">CPRom Team</a>
+                <a href="#" class="hover:underline">CProm Team</a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="2020-03-10">Mar 10, 2023</time>
