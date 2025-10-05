@@ -8,7 +8,7 @@
 <footer>
 
   <!-- Main footer content -->
-  <div class="relative max-w-7xl mx-auto px-6 py-10 sm:py-20 lg:px-8 ">
+  <div class="relative max-w-7xl mx-auto px-6 py-10 sm:py-20 lg:px-8">
     <!-- Grid layout -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
       

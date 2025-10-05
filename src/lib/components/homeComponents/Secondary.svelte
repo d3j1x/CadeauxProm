@@ -4,7 +4,7 @@
   </div>
   <div class="relative mx-auto max-w-7xl">
     <div class="text-center">
-      <h2 class="text-3xl font-bold tracking-tight  sm:text-4xl">Trends.</h2>
+      <h2 class="text-3xl font-bold tracking-tight  sm:text-4xl">Tendances.</h2>
       <p class="mx-auto mt-3 max-w-2xl text-xl  sm:mt-4">
         This is your life and it's ending one minute @ a time...</p>
     </div>
