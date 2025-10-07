@@ -15,7 +15,7 @@
     }
 
     let menu = [
-    { name: "Tableaux", href: "/" },
+    { name: "Tableaux", href: "/tableaux" },
     { name: "Montres", href: "/" },
     { name: "Autres..", href: "/" }
   ];
@@ -102,7 +102,7 @@
 </svg>
 
           {/snippet}
-          <SidebarItem label="Tableaux" href="/" onclick={closeDrawer}/>
+          <SidebarItem label="Tableaux" href="/tableaux" onclick={closeDrawer}/>
           <SidebarItem label="Montres" href="/" onclick={closeDrawer}/>
           <SidebarItem label="Autres.." href="/" onclick={closeDrawer}/>
         </SidebarDropdownWrapper>
