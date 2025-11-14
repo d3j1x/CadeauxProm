@@ -35,10 +35,13 @@
           <h2 class="text-2xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white">So trust in God</h2>
           <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">فتوكل على الله</p>
           <div class="flex justify-between items-center mb-4">
-      <div class="flex -space-x-3">
+      <!-- <div class="flex -space-x-3">
         <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
         <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
         <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+      </div> -->
+      <div class="flex -space-x-3">
+        <p class="font-semibold">189 DT</p>
       </div>
             <div class="flex items-center text-red-500 text-xl font-bold">
               <ion-icon name="heart"></ion-icon>
@@ -65,9 +68,7 @@
           <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">سبحان الله</p>
           <div class="flex justify-between items-center mb-4">
       <div class="flex -space-x-3">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
+        <p class="font-semibold">189 DT</p>
       </div>
             <div class="flex items-center text-yellow-500 text-xl font-bold">
               <ion-icon name="star"></ion-icon>
@@ -94,9 +95,7 @@
           <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">ما شاء الله</p>
           <div class="flex justify-between items-center mb-4">
       <div class="flex -space-x-3">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+        <p class="font-semibold">189 DT</p>
       </div>
             <div class="flex items-center text-yellow-500 text-xl font-bold">
               <ion-icon name="star"></ion-icon>
@@ -124,9 +123,7 @@
           <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">وأما بنعمة ربك فحدث</p>
           <div class="flex justify-between items-center mb-4">
       <div class="flex -space-x-3">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+        <p class="font-semibold">189 DT</p>
       </div>
             <div class="flex items-center text-yellow-500 text-xl font-bold">
               <ion-icon name="star"></ion-icon>

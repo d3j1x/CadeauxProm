@@ -3,6 +3,7 @@
 	import Limited from "$lib/components/homeComponents/Limited.svelte";
 	import Partners from "$lib/components/homeComponents/Partners.svelte";
 	import Secondary from "$lib/components/homeComponents/Secondary.svelte";
+	import Whyus from "$lib/components/homeComponents/Whyus.svelte";
   import { Alert } from "flowbite-svelte";
 </script>
 
@@ -22,6 +23,8 @@
 
 
 <Hero />
+
+<Whyus />
 
 <Limited />
 
