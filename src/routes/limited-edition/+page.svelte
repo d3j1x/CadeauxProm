@@ -16,7 +16,7 @@
 <div class="w-full h-full  py-16">
   <div class="max-w-6xl mx-auto flex flex-col justify-center items-center">
     <!-- Title -->
-    <p class="pb-2 text-lg lg:text-2xl text-rose-600 font-semibold">Tableaux</p>
+    <p class="pb-2 text-lg lg:text-2xl text-rose-600 font-semibold">ÉDITION LIMITÉE</p>
     <h2 class="text-3xl lg:text-5xl text-center  font-semibold mb-12 dark:text-white">
       Choisissez Votre Meilleur ..
     </h2>

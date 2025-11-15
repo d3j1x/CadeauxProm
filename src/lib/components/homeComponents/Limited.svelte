@@ -49,7 +49,7 @@
       </p>
     </div>
 
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <div class="relative rounded-xl overflow-hidden shadow-2xl" id="video-container">
         <!-- Smooth fade transition -->
         <img
@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="text-center mt-10">
-      <a class="font-semibold hover:underline text-rose-500 text-xl border-2 px-2 rounded " href="/tableaux">Découvrir ..</a>
+      <a class="font-semibold hover:underline text-rose-500 text-xl border-2 px-2 rounded " href="/limited-edition">Découvrir ..</a>
     </div>
   </div>
 </section>

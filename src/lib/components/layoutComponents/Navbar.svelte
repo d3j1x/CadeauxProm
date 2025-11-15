@@ -41,7 +41,7 @@
     <NavLi class="text-lg" href="/">Accueil</NavLi>
     <NavLi class="text-lg lg:mx-4" href="/">Cadeaux</NavLi>
     <NavLi class="text-lg" href="/">Packs</NavLi>
-    <NavLi class="text-lg  lg:mx-4" href="/">Articles</NavLi>
+    <NavLi class="text-lg  lg:mx-4" href="/articles">Articles</NavLi>
     <NavLi class="cursor-pointer  text-lg" onclick={() => (open = true)}>
       Decorative<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6  text-lg" />
     </NavLi>
@@ -85,7 +85,7 @@
             <span class="ms-3 inline-flex items-center justify-center rounded-full bg-gray-200 px-2 text-sm font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Promo</span>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label="Articles" {spanClass} href="/" onclick={closeDrawer}>
+        <SidebarItem label="Articles" {spanClass} href="/articles" onclick={closeDrawer}>
           {#snippet icon()}
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
