@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Hero from "$lib/components/homeComponents/Hero.svelte";
 	import Limited from "$lib/components/homeComponents/Limited.svelte";
+	import Pack3 from "$lib/components/homeComponents/Pack3.svelte";
 	import Partners from "$lib/components/homeComponents/Partners.svelte";
 	import Secondary from "$lib/components/homeComponents/Secondary.svelte";
 	import Whyus from "$lib/components/homeComponents/Whyus.svelte";
@@ -29,6 +30,9 @@
 <Limited />
 
 
+
 <Secondary />
+
+<Pack3 />
 
 <Partners />
