@@ -1,144 +1,95 @@
-<svelte:head>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</svelte:head>
-
 <script>
-  const phone = "21656165627"; // replace with your number (no + or spaces)
-  const message = "Bonjour, je suis intéressé par votre produit Édition Limitée !";
-
-  function openWhatsApp() {
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  }
+    import popular01 from '$lib/images/tableaux/tab01.jpeg';
+    import popular02 from '$lib/images/tableaux/tab02.jpeg';
+    import limited01 from '$lib/images/tableaux/tabLimited01.jpeg';
+    import limited02 from '$lib/images/tableaux/tabLimited02.jpeg';
 </script>
 
-<div class="w-full h-full  py-16">
-  <div class="max-w-6xl mx-auto flex flex-col justify-center items-center">
-    <!-- Title -->
-    <p class="pb-2 text-lg lg:text-2xl text-rose-600 font-semibold">Tableaux</p>
-    <h2 class="text-3xl lg:text-5xl text-center  font-semibold mb-12 dark:text-white">
-      Choisissez Votre Meilleur ..
-    </h2>
-
-    <!-- Cards -->
-    <div class="flex flex-wrap gap-8 justify-center items-center">
-      <!-- Card 1 -->
-      <div
-        class="group w-[18rem] sm:w-[20rem] bg-white dark:bg-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-        <img
-          class="w-full h-[14rem] object-cover"
-          src="/images/newtableau.webp"
-          alt="Sushi"
-        />
-        <div class="p-5">
-          <h2 class="text-2xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white">So trust in God</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">فتوكل على الله</p>
-          <div class="flex justify-between items-center mb-4">
-      <!-- <div class="flex -space-x-3">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
-        <img class="w-9 h-9 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
-      </div> -->
-      <div class="flex -space-x-3">
-        <p class="font-semibold">189 DT</p>
-      </div>
-            <div class="flex items-center text-red-500 text-xl font-bold">
-              <ion-icon name="heart"></ion-icon>
-              <span class="text-red-500 ml-1">5.0</span>
-            </div>
-          </div>
-          <button onclick={openWhatsApp}
-            class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black">
-            Commandez
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-             <div
-        class="group w-[18rem] sm:w-[20rem] bg-white dark:bg-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-        <img
-          class="w-full h-[14rem] object-cover"
-          src="/images/newtableau2.webp"
-          alt="Sushi"
-        />
-        <div class="p-5">
-          <h2 class="text-2xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white">Praise God</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">سبحان الله</p>
-          <div class="flex justify-between items-center mb-4">
-      <div class="flex -space-x-3">
-        <p class="font-semibold">189 DT</p>
-      </div>
-            <div class="flex items-center text-yellow-500 text-xl font-bold">
-              <ion-icon name="star"></ion-icon>
-              <span class="text-yellow-500 ml-1">4.9</span>
-            </div>
-          </div>
-          <button onclick={openWhatsApp}
-            class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black">
-            Commandez
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-             <div
-        class="group w-[18rem] sm:w-[20rem] bg-white dark:bg-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-        <img
-          class="w-full h-[14rem] object-cover"
-          src="/images/newtableau3.webp"
-          alt="Sushi"
-        />
-        <div class="p-5">
-          <h2 class="text-2xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white">God bless</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">ما شاء الله</p>
-          <div class="flex justify-between items-center mb-4">
-      <div class="flex -space-x-3">
-        <p class="font-semibold">189 DT</p>
-      </div>
-            <div class="flex items-center text-yellow-500 text-xl font-bold">
-              <ion-icon name="star"></ion-icon>
-              <span class="text-yellow-500 ml-1">4.9</span>
-            </div>
-          </div>
-          <button onclick={openWhatsApp}
-            class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black">
-            Commandez
-          </button>
-        </div>
-      </div>
-
-      <!-- card 4 -->
-             <div
-        class="group w-[18rem] sm:w-[20rem] bg-white dark:bg-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-        <img
-          class="w-full h-[14rem] object-cover"
-          src="/images/newtableau4.webp"
-          alt="Sushi"
-        />
-        <div class="p-5">
-          <h2 class="text-2xl font-semibold mb-1 group-hover:text-rose-600 dark:text-white">The blessing ..
-</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-extrabold">وأما بنعمة ربك فحدث</p>
-          <div class="flex justify-between items-center mb-4">
-      <div class="flex -space-x-3">
-        <p class="font-semibold">189 DT</p>
-      </div>
-            <div class="flex items-center text-yellow-500 text-xl font-bold">
-              <ion-icon name="star"></ion-icon>
-              <span class="text-yellow-500 ml-1">4.9</span>
-            </div>
-          </div>
-          <button onclick={openWhatsApp}
-            class="w-full py-2 border border-rose-600 dark:border-gray-500 text-rose-700 dark:text-white rounded-full uppercase font-bold transition duration-300 hover:bg-rose-600 hover:text-white dark:hover:bg-white dark:hover:text-black">
-            Commandez
-          </button>
-        </div>
-      </div>
-
-
+<!-- Main Product Showcase Section -->
+<section class="bg-gray-50 min-h-screen py-16 px-6">
+  <!-- Hero -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Découvrez nos produits haut de gamme</h1>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Livraison gratuite.</p>
+    <div class="mt-6">
+      <button class="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800">Achetez maintenant</button>
     </div>
   </div>
-</div>
 
+  <!-- Category Filters -->
+  <div class="flex flex-wrap justify-center gap-4 mb-10">
+    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Populaire</button>
+    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">ÉDITION LIMITÉE</button>
+    
+ 
+    
+  </div>
+
+  <!-- Product Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <!-- Product Card -->
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group">
+      <div class="relative">
+        <img src={popular01} alt="Product Image" class="w-full h-60 object-cover group-hover:scale-105 transition-transform" />
+        <span class="absolute top-3 right-3 bg-black text-white text-xs px-2 py-1 rounded">NEW</span>
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold text-gray-900 mb-1">Arabesque PoP 1</h3>
+        <p class="text-sm text-gray-500 mb-2"> </p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-semibold text-green-600">89.00 DT</span>
+          <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Commander</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate Product Cards -->
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group">
+      <div class="relative">
+        <img src={popular02} alt="Product Image" class="w-full h-60 object-cover group-hover:scale-105 transition-transform" />
+        <span class="absolute top-3 right-3 bg-black text-white text-xs px-2 py-1 rounded">NEW</span>
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold text-gray-900 mb-1">Arabesque PoP 2</h3>
+        <p class="text-sm text-gray-500 mb-2"></p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-semibold text-green-600">89.00 DT</span>
+          <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Commander</button>
+        </div>
+      </div>
+    </div>
+
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group">
+      <div class="relative">
+        <img src={limited01} alt="Product Image" class="w-full h-60 object-cover group-hover:scale-105 transition-transform" />
+        <span class="absolute top-3 right-3 bg-black text-white text-xs px-2 py-1 rounded">NEW</span>
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold text-gray-900 mb-1">Limited 1</h3>
+        <p class="text-sm text-gray-500 mb-2"> </p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-semibold text-green-600">189.00 DT</span>
+          <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Commander</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate Product Cards -->
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden group">
+      <div class="relative">
+        <img src={limited02} alt="Product Image" class="w-full h-60 object-cover group-hover:scale-105 transition-transform" />
+        <span class="absolute top-3 right-3 bg-black text-white text-xs px-2 py-1 rounded">NEW</span>
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold text-gray-900 mb-1">Limited 2</h3>
+        <p class="text-sm text-gray-500 mb-2"></p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-semibold text-green-600">189.00 DT</span>
+          <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
