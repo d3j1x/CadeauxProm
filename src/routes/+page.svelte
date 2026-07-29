@@ -19,7 +19,7 @@
 
   <Alert class="rounded-none m-0 p-1 text-center">
     <span class="font-medium">Avis : Ce site est actuellement en développement et en cours de création.</span>
-    <span class="font-bold">Merci pour votre patience !</span> 
+    <span class="font-bold">Merci pour votre patience ! x x x</span> 
   </Alert>
 
 
